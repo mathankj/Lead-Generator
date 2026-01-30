@@ -235,19 +235,22 @@ backend/app/
 
 ## 9. Test Plan
 
-### Unit Tests
+### Unit Tests (Added)
 
-- `test_apollo_client.py` - Mock Apollo API responses
-- `test_hunter_client.py` - Mock Hunter API responses
-- `test_scoring.py` - Scoring algorithm edge cases
-- `test_leads_crud.py` - Lead CRUD operations
-- `test_contacts_crud.py` - Contact CRUD operations
+- `backend/tests/test_apollo_client.py` - Mock Apollo API responses ✓
+- `backend/tests/test_hunter_client.py` - Mock Hunter API responses ✓
+- `backend/tests/test_scoring.py` - Scoring algorithm edge cases ✓
+- `backend/tests/test_leads_crud.py` - Lead CRUD operations ✓
+- `backend/tests/test_contacts_crud.py` - Contact CRUD operations ✓
 
-### Integration Tests
+### Integration Tests (Added)
 
-- `test_discovery_api.py` - Full discovery flow
-- `test_enrichment_pipeline.py` - Enrichment with mocked APIs
-- `test_export_import.py` - CSV/JSON import/export
+- `backend/tests/test_discovery_api.py` - Full discovery flow ✓
+
+### Deferred Tests
+
+- `test_enrichment_pipeline.py` - Enrichment with mocked APIs (Phase 2)
+- `test_export_import.py` - CSV/JSON import/export (Phase 2)
 
 ### E2E Tests
 
@@ -272,7 +275,7 @@ backend/app/
 ## 11. Checklist
 
 - [x] Plan reviewed
-- [ ] Tests added/updated
+- [x] Tests added/updated
 - [ ] Lint/test/build pass
 - [ ] Docs updated
 - [ ] PR raised

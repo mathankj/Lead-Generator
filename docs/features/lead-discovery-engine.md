@@ -277,6 +277,6 @@ backend/app/
 - [x] Plan reviewed
 - [x] Tests added/updated
 - [ ] Lint/test/build pass
-- [ ] Docs updated
-- [ ] PR raised
+- [x] Docs updated
+- [x] PR raised (https://github.com/mathankj/Lead-Generator/pull/2)
 - [ ] PR approved

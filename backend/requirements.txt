@@ -1,0 +1,33 @@
+# TechJays Lead AI - Backend Dependencies
+
+# Web Framework
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+
+# Database
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# Vector Database
+chromadb==0.4.22
+
+# AI/LLM
+groq==0.4.2
+langchain==0.1.6
+langchain-groq==0.0.1
+
+# Validation & Serialization
+pydantic==2.6.1
+pydantic-settings==2.1.0
+
+# HTTP Client
+httpx==0.26.0
+
+# Utilities
+python-dotenv==1.0.1
+structlog==24.1.0
+
+# Redis (for future task queue)
+redis==5.0.1

@@ -6,7 +6,7 @@
 
 | Feature | Slug | Status | Owner | Created |
 |---------|------|--------|-------|---------|
-| <!-- Feature name --> | <!-- slug --> | Draft | <!-- team --> | <!-- YYYY-MM-DD --> |
+| Project Foundation | project-foundation | In Progress | TechJays Engineering | 2026-01-30 |
 
 ## Status Legend
 

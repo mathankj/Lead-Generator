@@ -1,7 +1,7 @@
 # Feature: Lead Discovery Engine
 
 **Slug:** lead-discovery-engine
-**Status:** Draft
+**Status:** In Progress
 **Owner:** TechJays Engineering
 **Created:** 2026-01-30
 **Last updated:** 2026-01-30
@@ -271,7 +271,7 @@ backend/app/
 
 ## 11. Checklist
 
-- [ ] Plan reviewed
+- [x] Plan reviewed
 - [ ] Tests added/updated
 - [ ] Lint/test/build pass
 - [ ] Docs updated

@@ -7,6 +7,7 @@
 | Feature | Slug | Status | Owner | Created |
 |---------|------|--------|-------|---------|
 | Project Foundation | project-foundation | In Progress | TechJays Engineering | 2026-01-30 |
+| Lead Discovery Engine | lead-discovery-engine | Draft | TechJays Engineering | 2026-01-30 |
 
 ## Status Legend
 

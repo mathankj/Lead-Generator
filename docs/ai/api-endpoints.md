@@ -2,24 +2,42 @@
 
 > This document catalogs the API endpoints in the application.
 
-## Overview
+## Status
 
-<!-- API versioning, base URL, authentication -->
+🚧 **Not yet implemented** - API endpoints will be documented when backend is created.
 
-## Endpoints
+## Planned API Structure
 
-<!-- List endpoints grouped by resource/domain -->
+### Base URL
 
-### Resource 1
+TBD - Example: `https://api.lead-generator.com/v1`
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET    | /api/... | ...         |
+### Authentication
+
+TBD - Options: JWT tokens, API keys, OAuth 2.0
+
+### Potential Endpoints
+
+| Method | Endpoint | Description | Status |
+|--------|----------|-------------|--------|
+| GET | /leads | List all leads | Not Created |
+| POST | /leads | Create new lead | Not Created |
+| GET | /leads/:id | Get lead details | Not Created |
+| PUT | /leads/:id | Update lead | Not Created |
+| DELETE | /leads/:id | Delete lead | Not Created |
 
 ## Error Handling
 
-<!-- Document error response format -->
+Standard error format (proposed):
+```json
+{
+  "error": {
+    "code": "ERROR_CODE",
+    "message": "Human readable message"
+  }
+}
+```
 
 ## Rate Limiting
 
-<!-- Document rate limiting policies -->
+<!-- To be documented when API is implemented -->

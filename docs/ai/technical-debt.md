@@ -2,27 +2,35 @@
 
 > This document tracks known technical debt items for prioritization.
 
+## Status
+
+✅ **Clean slate** - New project with no technical debt yet.
+
 ## Priority: High
 
-<!-- Critical items that should be addressed soon -->
-
-1. <!-- Item description -->
+_No items_
 
 ## Priority: Medium
 
-<!-- Important but not urgent items -->
-
-1. <!-- Item description -->
+_No items_
 
 ## Priority: Low
 
-<!-- Nice-to-have improvements -->
+1. **Choose technology stack** - Need to decide on framework, language, and database before first feature implementation.
 
-1. <!-- Item description -->
+## Setup Tasks (Not Debt)
+
+- [ ] Choose frontend framework
+- [ ] Choose backend framework
+- [ ] Choose database
+- [ ] Set up test framework
+- [ ] Set up linting/formatting
+- [ ] Set up CI/CD pipeline
 
 ## Resolved
 
-<!-- Recently resolved technical debt -->
-
 | Item | Resolved Date | PR/Commit |
 |------|---------------|-----------|
+| Initial repo setup | 2026-01-30 | 4e04c8e |
+| Claude workflow config | 2026-01-30 | 4e04c8e |
+| GitHub integration | 2026-01-30 | 4e04c8e |

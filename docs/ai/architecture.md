@@ -4,20 +4,44 @@
 
 ## Overview
 
-<!-- Describe the overall system architecture -->
+**Lead-Generator** is a new project under development. The architecture has not yet been defined.
 
-## Components
+## Status
 
-<!-- List major components/services -->
+🚧 **Project Status:** Initial Setup Complete
 
-## Data Flow
+The following has been configured:
+- Git repository initialized
+- GitHub remote connected (mathankj/Lead-Generator)
+- Claude Code workflow commands configured
+- Feature-first development workflow established
 
-<!-- Describe how data flows through the system -->
+## Planned Components
+
+| Component | Purpose | Status |
+|-----------|---------|--------|
+| TBD | TBD | Not Started |
 
 ## Technology Stack
 
-<!-- List key technologies used -->
+| Layer | Technology | Notes |
+|-------|------------|-------|
+| Frontend | TBD | |
+| Backend | TBD | |
+| Database | TBD | |
+| Hosting | TBD | |
+
+## Data Flow
+
+<!-- To be documented when architecture is defined -->
 
 ## Deployment
 
-<!-- Describe deployment architecture -->
+<!-- To be documented when deployment is configured -->
+
+## Next Steps
+
+1. Define project requirements
+2. Choose technology stack
+3. Design initial architecture
+4. Create first feature spec using `/feature-new`

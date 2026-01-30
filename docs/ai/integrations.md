@@ -2,18 +2,34 @@
 
 > This document describes external integrations and third-party services.
 
-## External Services
+## Status
 
-<!-- List external APIs and services -->
+🚧 **Not yet configured** - Integrations will be documented as they are added.
 
-## Authentication
+## Current Integrations
 
-<!-- Describe auth methods for integrations -->
+### GitHub
+
+- **Repository:** mathankj/Lead-Generator
+- **Authentication:** GitHub CLI (`gh`)
+- **Scopes:** gist, read:org, repo, workflow
+
+## Potential Integrations
+
+| Service | Purpose | Status |
+|---------|---------|--------|
+| Email Provider | Send campaigns | Not Configured |
+| CRM | Sync leads | Not Configured |
+| Analytics | Track conversions | Not Configured |
+
+## Authentication Methods
+
+<!-- To be documented per integration -->
 
 ## Webhooks
 
-<!-- Document webhook endpoints and events -->
+<!-- To be documented when webhooks are implemented -->
 
 ## Rate Limits
 
-<!-- Document rate limits and quotas -->
+<!-- To be documented per integration -->

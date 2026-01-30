@@ -18,11 +18,23 @@ class HunterClient:
 
     def __init__(self, api_key: str):
         """Initialize Hunter client with API key."""
+        if not api_key:
+            raise ValueError("API key is required")
         self.api_key = api_key
+        self.base_url = self.BASE_URL
         self.client = httpx.AsyncClient(
             base_url=self.BASE_URL,
             timeout=30.0,
         )
+
+    async def _make_request(
+        self, endpoint: str, params: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Make API request to Hunter."""
+        params["api_key"] = self.api_key
+        response = await self.client.get(endpoint, params=params)
+        response.raise_for_status()
+        return response.json()
 
     async def find_email(
         self,
@@ -110,9 +122,14 @@ class HunterClient:
                 score=result.get("score"),
             )
 
+            status = result.get("result", result.get("status", "unknown"))
+            is_valid = status in ("deliverable", "valid")
+
             return {
                 "email": result.get("email"),
-                "status": result.get("status"),  # valid, invalid, accept_all, webmail, disposable, unknown
+                "result": status,
+                "status": status,
+                "is_valid": is_valid,
                 "score": result.get("score", 0),
                 "regexp": result.get("regexp"),
                 "gibberish": result.get("gibberish"),

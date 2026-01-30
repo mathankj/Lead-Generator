@@ -14,16 +14,31 @@ logger = get_logger(__name__)
 class ApolloClient:
     """Client for Apollo.io API integration."""
 
-    BASE_URL = "https://api.apollo.io/v1"
+    BASE_URL = "https://api.apollo.io/api/v1"
 
     def __init__(self, api_key: str):
         """Initialize Apollo client with API key."""
+        if not api_key:
+            raise ValueError("API key is required")
         self.api_key = api_key
+        self.base_url = self.BASE_URL
         self.client = httpx.AsyncClient(
             base_url=self.BASE_URL,
-            headers={"Content-Type": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "Cache-Control": "no-cache",
+            },
             timeout=30.0,
         )
+
+    async def _make_request(
+        self, endpoint: str, payload: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Make API request to Apollo."""
+        payload["api_key"] = self.api_key
+        response = await self.client.post(endpoint, json=payload)
+        response.raise_for_status()
+        return response.json()
 
     async def search_organizations(
         self,

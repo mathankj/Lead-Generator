@@ -1,7 +1,5 @@
 # TechJays Lead AI - Docker Compose Configuration
 
-version: '3.8'
-
 services:
   # FastAPI Backend
   api:
